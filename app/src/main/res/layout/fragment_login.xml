@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rlContainerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/demo_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="265dp"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:id="@+id/edt_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_edt_login"
+            android:drawableStart="@drawable/icon_username_dark"
+            android:drawablePadding="8dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_login_username"
+            android:id="@+id/edt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_edt_login"
+            android:drawableStart="@drawable/icon_password"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@id/edt_login_password"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_btn_login"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btn_signup_in_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_btn_login"
+            android:text="SIGNUP"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup_in_login"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/btn_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_trans"
+            android:text="Forget Password ?"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

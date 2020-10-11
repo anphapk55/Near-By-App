@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activities.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/frame_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_nav_bottom" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:elevation="0dp"
+            android:id="@+id/main_nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorTwitterA"
+            app:itemIconTint="@color/colorPrimaryDark"
+            app:itemTextColor="@color/colorPrimaryDark"
+            app:menu="@menu/bottom_menu" />
+
+    </RelativeLayout>
+</layout>

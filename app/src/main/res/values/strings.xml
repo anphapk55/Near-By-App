@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mMess</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="you_need_turn_on_gps">You need turn on GPS to use</string>
+    <string name="facebook_app_id">321674548888014</string>
+    <string name="fb_login_protocol_scheme">fb321674548888014</string>
+    <string name="todo">TODO</string>
+</resources>

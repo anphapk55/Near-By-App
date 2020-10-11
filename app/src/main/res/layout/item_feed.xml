@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/ivItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/bg_item_feed_white"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avt"
+                android:layout_width="45dp"
+                android:layout_margin="5dp"
+                android:layout_height="45dp"
+                android:src="@drawable/bg_profile_avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_public_account_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="NguyenHa"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_avt"
+                app:layout_constraintTop_toTopOf="@id/img_avt" />
+
+            <TextView
+                android:id="@+id/tv_item_public_feed_upload_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:maxLines="1"
+                android:text="1 time ago"
+                android:textSize="14sp"
+                android:drawablePadding="4dp"
+                app:drawableLeftCompat="@drawable/icon_clock_purpe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_avt"
+                app:layout_constraintTop_toBottomOf="@id/tv_public_account_name" />
+
+            <TextView
+                android:id="@+id/tv_public_item_feed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="Hello xin chao cac ban"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_avt" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_public_item_feed">
+
+                <ImageView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/iv_public_item_image_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="224dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_item_feed_map"
+                    android:contentDescription="TODO" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/btn_item_public_feed_favorite"
+                android:layout_width="22sp"
+                android:layout_height="22sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_favorite_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/tv_item_public_feed_favorites_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="12"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_item_public_feed_favorite"
+                app:layout_constraintStart_toEndOf="@id/btn_item_public_feed_favorite"
+                app:layout_constraintTop_toTopOf="@id/btn_item_public_feed_favorite" />
+
+            <ImageButton
+                android:id="@+id/btn_public_item_feed_comment"
+                android:layout_width="22sp"
+                android:layout_height="22sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/btn_item_feed_comment"
+                app:layout_constraintBottom_toBottomOf="@id/btn_item_public_feed_favorite"
+                app:layout_constraintStart_toEndOf="@id/tv_item_public_feed_favorites_count"
+                app:layout_constraintTop_toTopOf="@id/btn_item_public_feed_favorite"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/tv_item_public_feed_comments_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:text="15"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_item_public_feed_favorite"
+                app:layout_constraintStart_toEndOf="@id/btn_public_item_feed_comment"
+                app:layout_constraintTop_toTopOf="@id/btn_item_public_feed_favorite" />
+
+            <TextView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/tv_item_feed_latlg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                app:drawableLeftCompat="@drawable/place_icon"
+                app:layout_constraintBottom_toBottomOf="@id/btn_item_public_feed_favorite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_item_public_feed_comments_count"
+                app:layout_constraintTop_toTopOf="@id/btn_item_public_feed_favorite" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</layout>

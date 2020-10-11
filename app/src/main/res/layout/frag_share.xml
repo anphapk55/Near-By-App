@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_text_gradient">
+
+        <ImageView
+            android:id="@+id/iv_share_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/img_noimage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_share_image"
+            android:background="@color/colorWhiteTrans"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/place_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/place_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_latitude" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/edt_input"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_comment_text"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Your status"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btn_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_location_start"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:text="SHARE"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edt_input" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.FadingCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/colorAccent" />
+
+    </RelativeLayout>
+</layout>

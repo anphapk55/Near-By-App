@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_item_feed_white"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/unsplash_girl_avatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="samvu.05"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_isOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đang online"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

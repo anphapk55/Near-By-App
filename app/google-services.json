@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "677023693842",
+    "firebase_url": "https://kma-map-social.firebaseio.com",
+    "project_id": "kma-map-social",
+    "storage_bucket": "kma-map-social.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677023693842:android:52661c13c493187bb9eccb",
+        "android_client_info": {
+          "package_name": "com.sam.kmamapsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677023693842-jj44ikvlbar88kf3kdnh16uu9p9cpf8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sam.kmamapsocial",
+            "certificate_hash": "4f771759356721a8d3dc4d2a97cc657cf480fe75"
+          }
+        },
+        {
+          "client_id": "677023693842-eiojjaeslruan78rdgmbfeflvoo0vn7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDED6gHXezyFa8mkVDN1bf7POZh7GObbQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677023693842-eiojjaeslruan78rdgmbfeflvoo0vn7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

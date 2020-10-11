@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a7140</color>
+    <color name="colorPrimaryDark">#14371f</color>
+    <color name="colorPrimaryLight">#52796f</color>
+    <color name="colorAccent">#84a98c</color>
+    <color name="colorYellow">#c4501b</color>
+    <color name="colorWhite">#FAFAFA</color>
+    <color name="colorBackground">#F1F8E9</color>
+    <color name="colorWhiteSmoke">#f5f5f5</color>
+    <color name="colorGainsboro">#dcdcdc</color>
+    <color name="colorGray">#d3d4d4d4</color>
+    <color name="colorGrayS">#D3A79494</color>
+    <color name="colorGrayLight">#D3D3D3</color>
+    <color name="colorGrayDark">#A9A9A9</color>
+    <color name="colorGrey">#808080</color>
+    <color name="colorGreyDim">#696969</color>
+    <color name="colorGreyDark">#2F4F4F</color>
+    <color name="colorTextGreyDark">#2F4F4F</color>
+
+    <color name="anthracite">#2B292E</color>
+    <color name="orangeRedLight">#F39876</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="green">#008000</color>
+
+    <color name="debug_red">#F00000</color>
+    <color name="debug_red_DARK">#A70000</color>
+    <color name="debug_red_2">#D51F43</color>
+    <color name="debug_blue">#0F0FFF</color>
+    <color name="debug_green">#00FFFF</color>
+    <color name="ColorSplashA">#ed463e</color>
+    <color name="ColorSplash">#ED553E</color>
+    <color name="ColorSplashB">#ED723E</color>
+    <color name="colorPrimaryB">#3F51B5</color>
+    <color name="colorPrimaryDarkB">#303F9F</color>
+    <color name="colorTwitterA">#c0deed</color>
+    <color name="colorTwitterB">#00aced</color>
+    <color name="colorTwitterC">#0084b4</color>
+    <color name="ColorBlack">#000000</color>
+    <color name="ColorBlackTrans">#80000000</color>
+    <color name="ColorBlackTransA">#A6000000</color>
+    <color name="ColorBlackTransB">#59000000</color>
+    <color name="ColorBlackTransC">#33000000</color>
+    <color name="ColorBlackTransD">#00000000</color>
+    <color name="colorWhiteTrans">#80ffffff</color>
+    <color name="colorWhiteTransA">#40ffffff</color>
+    <color name="colorWhiteTransB">#59ffffff</color>
+    <color name="colorWhiteTransC">#1Affffff</color>
+    <color name="colorWhiteTransD">#00ffffff</color>
+    <color name="titleColor">#c4501b</color>
+    <color name="colorButtonBg">#4a7140</color>
+    <color name="gradientGreenDark">#14371f</color>
+    <color name="gradientGreenLight">#283618</color>
+
+</resources>
